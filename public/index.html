@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Bit Books | Campus Resource Booking</title>
+<title>CampusEase | Campus Resource Booking</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
 <style>.authOverlay{position:fixed;inset:0;z-index:100;background:linear-gradient(135deg,#06142f,#123b89 55%,#06b6d4);display:grid;place-items:center;padding:20px}.authCard{width:min(440px,100%);background:#fff;border-radius:22px;padding:30px;box-shadow:0 30px 80px #0005}.authBrand{display:flex;align-items:center;gap:12px;margin-bottom:22px}.authLogo{width:45px;height:45px;border-radius:13px;background:linear-gradient(135deg,#7c3aed,#06b6d4);display:grid;place-items:center;font-size:22px}.authTitle{font:800 24px "Plus Jakarta Sans";color:#071936}.authSub{font-size:11px;color:#718096}.authTabs{display:flex;background:#eef3fb;border-radius:10px;padding:4px;margin-bottom:20px}.authTabs button{flex:1;border:0;background:transparent;padding:10px;border-radius:8px;font-weight:800;color:#64748b}.authTabs button.active{background:#fff;color:#2563eb}.authForm{display:grid;gap:13px}.authForm input{width:100%;padding:12px;border:1px solid #dbe3ef;border-radius:9px}.authAction{border:0;border-radius:10px;padding:12px;background:linear-gradient(90deg,#2563eb,#4f46e5);color:#fff;font-weight:800}.authError{background:#fee2e2;color:#b91c1c;padding:9px;border-radius:8px;font-size:11px;display:none}.authNote{font-size:10px;color:#718096;text-align:center;margin-top:12px}.logoutBtn{border:1px solid #dbe3ef;background:#fff;border-radius:8px;padding:7px 10px;font-size:10px;font-weight:800;color:#dc2626}
@@ -15,17 +15,17 @@
 <body>
 <div class="app">
 <aside class="sidebar">
-<div class="logo"><div class="logoIcon">📚</div><div><div class="logoTitle">Bit Books</div><div class="logoSub">CAMPUS RESOURCE BOOKING</div></div></div>
+<div class="logo"><div class="logoIcon">📚</div><div><div class="logoTitle">CampusEase</div><div class="logoSub">CAMPUS RESOURCE BOOKING</div></div></div>
 <div class="navLabel">Workspace</div><div class="nav"><button id="homeNav" class="active"><span class="navIcon">⌂</span>Home</button><button id="mineNav"><span class="navIcon">▣</span>My Bookings</button><button id="browseNav"><span class="navIcon">⌕</span>Browse Resources</button><button id="adminNav"><span class="navIcon">⚙</span>Admin</button></div>
 <div class="navLabel">Resource Categories</div><div class="cat"><span class="dot" style="background:#22c55e"></span>Classrooms</div><div class="cat"><span class="dot" style="background:#a855f7"></span>Laboratories</div><div class="cat"><span class="dot" style="background:#f97316"></span>Auditoriums</div><div class="cat"><span class="dot" style="background:#38bdf8"></span>Study Rooms</div>
 <div class="sideBottom">Better Resources<br><b style="color:#aac5ed">A Brighter Campus</b></div>
 </aside>
 <div class="main">
-<div class="mobileTop"><b>📚 Bit Books</b></div>
+<div class="mobileTop"><b>📚 CampusEase</b></div>
 <header class="topbar"><div class="institute">▣ &nbsp; Bannari Amman Institute of Technology &nbsp;⌖</div><div class="profile"><div class="avatar" id="avatar">U</div><div><div id="topName" style="font-size:12px;font-weight:800">User</div><div id="topEmail" style="font-size:9px;color:#718096"></div></div><button class="logoutBtn" id="logoutBtn">Sign out</button></div></header>
 <main class="content" id="app"></main>
 </div></div>
-<div class="toast" id="toast"></div><div class="authOverlay" id="authOverlay"><div class="authCard"><div class="authBrand"><div class="authLogo">📚</div><div><div class="authTitle">Bit Books</div><div class="authSub">CAMPUS RESOURCE BOOKING SYSTEM</div></div></div><div class="authTabs"><button id="loginTab" class="active">Sign In</button><button id="registerTab">Create Account</button></div><div id="authBox"></div><div class="authNote">Your account keeps your bookings private and displays your registered name.</div></div></div>
+<div class="toast" id="toast"></div><div class="authOverlay" id="authOverlay"><div class="authCard"><div class="authBrand"><div class="authLogo">📚</div><div><div class="authTitle">CampusEase</div><div class="authSub">CAMPUS RESOURCE BOOKING SYSTEM</div></div></div><div class="authTabs"><button id="loginTab" class="active">Sign In</button><button id="registerTab">Create Account</button></div><div id="authBox"></div><div class="authNote">Your account keeps your bookings private and displays your registered name.</div></div></div>
 <script>
 const state={view:"home",resources:[],bookings:[],selected:null,filter:"All",search:"",user:null};
 const $=id=>document.getElementById(id);
